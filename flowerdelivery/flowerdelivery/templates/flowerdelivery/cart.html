@@ -1,0 +1,21 @@
+{% extends "catalog/base.html" %}
+
+{% block title %}Корзина{% endblock %}
+
+{% block content %}
+<h1>Корзина</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Товар</th>
+            <th>Количество</th>
+            <th>Цена</th>
+            <th>Действие</th>
+        </tr>
+    </thead>
+    <tbody id="cart-items">
+        <!-- Динамически заполняется с помощью JS -->
+    </tbody>
+</table>
+<button class="btn btn-success">Оформить заказ</button>
+{% endblock %}
